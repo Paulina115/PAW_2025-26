@@ -8,6 +8,8 @@
     <meta name="author" content="Paulina Jurewicz">
     <title>Hodowla aksolotli</title>
     <link rel="stylesheet" href="style.css">
+    <script src="js/kolorujtlo.js" defer></script>
+    <script src="js/timedate.js" defer></script>
 </head>
 <body>
     <header>
@@ -24,6 +26,17 @@
             </ul>
         </nav>
     </header>
+    <h5>Wybierz kolor tła:</h5>
+    <div id="colorButtons">
+        <div clas="buttons-div">
+            <button data-color="#4a52ba" class="buttons">ciemnoniebieski</button>
+            <button data-color="#03e8fc" class="buttons">jasnoniebieski</button>
+            <button data-color="#3a8a47" class="buttons">zielony</button>
+            <button data-color="#03fc9d" class="buttons">miętowy</button>
+            <button data-color="#6d60a3" class="buttons">fioletowy</button>
+            <button data-color="#c0c0c0" class="buttons">szary</button>
+        </div>
+    </div>
     <main>
         <section>
             <h2>Odżywianie askolotli</h2>
@@ -44,6 +57,10 @@
             </p>
 
         </section>
+        <div class="time-div">
+        <p id="data" class="czas"></p>
+        <p id="zegarek" class="czas"></p>
+        </div>
         
     </main>
     <footer>
