@@ -1,0 +1,69 @@
+
+<section class="welcome-page">
+    <h2>Witaj na stronie o aksolotlach !</h2>
+    <hr>
+    <br>
+    <img class ="article-img" src="images\t-k-H837qHe2Qj4-unsplash.jpg"
+    alt="Zdjęcie Aksolotla">
+    <h3>Aksolotl jako zwierzę domowe</h3>
+    <p>Aksolotl (Ambystoma mexicaum) to słodkowodny gatunek ogoniastego płaza, nazwyany inaczej ambystoma meksykańska.
+        
+    </p>
+    <br>
+    <p>
+        Cechą charakterystyczną tego zwierzęcia jest to, że przez całe swoje życie występuje pod postacią larwy.
+        Jest to tzw. zjawisko <b>neotenii</b>. To piękne i wyjątkowe stworzenia, które  można hodować w akawarium. Zamieszkuje aktualnie 
+        tylko jedno jezioro w Meksyku i w naturalnym środowisku jest skrajnie zagrożonym gatunkiem.
+    </p>
+    <br>
+   <p>
+        Na tej stronie znajdziesz najważniejsze informacje o tym, jak dbać o aksolotle:
+        <li><a href="index.php?idp=hodowla">jak je hodować</a>,</li>
+        <li><a href="index.php?idp=odżywianie">czym je karmić</a>,</li>
+        <li>jak dbać o ich <a href="index.php?idp=zdrowie">zdrowie</a>,</li>
+        <li>oraz wiele <a href="index.php?idp=ciekawostki">ciekawostek</a> o tych niezwykłych zwierzętach.</li>
+    </p>
+
+
+</section>
+<div id="animacjaTestowa1" class="test-block">Kliknij, a się powiększę</div>
+    <script>
+
+        $("#animacjaTestowa1").on("click", function(){
+            $(this).animate({
+                width: "500px",
+                opacity: 0.4,
+                fontSize: "3em",
+                borderWidth: "10px"
+            }, 1500);
+        });
+    </script>
+<div id="animacjaTestowa2" class="test-block">Najedź kursorem, a się powiększę</div>
+    <script>
+
+        $("#animacjaTestowa2").on({ "mouseover" : function(){
+            $(this).animate({
+                width: 300
+            }, 800);
+        },
+        "mouseout" : function(){
+            $(this).animate({
+                width: 200
+                }, 800);
+            }
+        });
+    </script>
+<div id="animacjaTestowa3" class="test-block">Kliknij, abym urósł</div>
+    <script>
+
+        $("#animacjaTestowa3").on("click", function(){
+            if (!$(this).is(":animated")){
+                $(this).animate({
+                width: "+=" + 50,
+                height: "+=" + 10,
+                opacity: "-=" + 0.1,
+                duration : 3000
+            });
+        }
+        });
+    </script>
