@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+body.strona-logowania{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f8;
+}
+header{
+    position: sticky;
+    top: 0;
+    }
+
+
+h1{
+    text-align: center;
+    color:rgb(0, 0, 0);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    }
+
+.navbar ul{
+    list-style-type: none;
+    background-color: #1b3148;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.navbar a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    
+}
+
+.navbar a:hover{
+    background-color: rgb(68, 50, 157);
+}
+.admin-table {
+    width: 100%;
+    border-collapse: collapse; 
+    margin: 5px auto;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+.admin-table th,
+.admin-table td {
+    border: 1px solid #b0d2e8;
+    border-radius: 2px;
+    padding: 8px;
+    text-align: left;
+}
+
+.admin-table th {
+    background-color: #1b3148;
+    color: #fff;
+}
+
+.admin-table tr:nth-child(even) {
+    background-color: #dae0e4; 
+}
+
+.admin-table tr:hover {
+    background-color: #e1f0ff; 
+}
+
+.admin-table a {
+    color: #427fc1;
+    text-decoration: none;
+}
+
+.admin-table a:hover {
+    text-decoration: underline;
+}
+
+.logowanie {
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 20px;
+}
+
+.logowanie p {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.logowanie form {
+    display: flex;
+    flex-direction: column;
+}
+
+.logowanie label {
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+.logowanie input[type="text"],
+.logowanie input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.logowanie input[type="submit"] {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.logowanie input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+body.strona-logowania .logowanie .login-links {
+    margin-top: 15px;
+    text-align: center;
+}
+
+body.strona-logowania .logowanie .login-links a {
+    font-size: 14px;
+    color: #a4aab5;
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+body.strona-logowania .logowanie .login-links a:hover{
+    color: #5b606b;
+}
+
+form {
+    background-color: #fff;
+    padding: 15px 20px;
+    border-radius: 6px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    max-width: 500px;
+}
+
+form input[type="varchar"],
+form input[type="text"],
+form input[type="number"],
+form input[type="email"],
+form input[type="password"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 7px 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    background-color: #8685a7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #301963;
+}
+
+.content ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.content ul li {
+    position: relative;
+    margin: 5px 0;
+    padding: 5px 10px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.content ul li:hover {
+    background-color: #e6f0ff;
+}
+
+.content ul li::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -15px;
+    width: 1px;
+    height: 100%;
+    background-color: #ccc;
+}
+
+.content ul li:first-child::before {
+    top: 10px;
+}
+
+.content ul li {
+    margin-left: 20px;
+}
+
+.content ul li a {
+    font-size: 13px;
+    color: #1b3148;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.content ul li a:hover {
+    text-decoration: underline;
+    color: #301963;
+}
+
+@media (max-width: 600px){
+    .navbar li{
+        float: none;
+        text-align: center
+        
+    }
+    
+    header {
+        position: static;
+        top: auto;
+    }
+}
